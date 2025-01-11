@@ -37,7 +37,6 @@ class VPNServer:
             print(symmetric_key)
             print("Derived symmetric key")
 
-            # Process messages securely
             self.process_messages(secure_socket, symmetric_key)
         except Exception as e:
             print(f"Error with client connection: {e}")
