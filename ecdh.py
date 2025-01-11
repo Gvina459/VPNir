@@ -16,7 +16,6 @@ class ECPoint:
     def is_infinity(self):
         return self.x is None and self.y is None
 
-    #getting class as argument rather than self(instance)
     @classmethod
     def infinity(cls):
         return cls(None, None)
