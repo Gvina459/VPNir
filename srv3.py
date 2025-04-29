@@ -34,7 +34,6 @@ class VPNServer:
 
             shared_secret = compute_shared_secret(server_private_key, client_public_key)
             symmetric_key = sha256(str(shared_secret).encode()).digest()
-            print(symmetric_key)
             print("Derived symmetric key")
 
             self.process_messages(secure_socket, symmetric_key)
